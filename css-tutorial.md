@@ -279,7 +279,8 @@ div > p {
         </ul>
     </nav>
 </body>
-</html>```
+</html>
+```
 [บันทึกภาพหน้าจอของผลลัพธ์การทดลอง]
 ![สกรีนช็อต 2025-03-07 134729](https://github.com/user-attachments/assets/5b66eacb-2400-4a3e-97d6-24f82cc35981)
 
@@ -503,8 +504,12 @@ background-size: cover;
     </div>
 </body>
 
-</html>```
+</html>
+```
+
 [บันทึกภาพหน้าจอของผลลัพธ์การทดลอง]
+![สกรีนช็อต 2025-03-07 141117](https://github.com/user-attachments/assets/eb6c29db-be96-420e-a5d7-33c17ae2a213)
+
 ![สกรีนช็อต 2025-03-07 141127](https://github.com/user-attachments/assets/bc96a492-4670-4b43-83a0-b69a7bdd2e17)
 
 
@@ -673,7 +678,8 @@ border: 1px solid black;
         .stat-box {
             margin: 1rem 0;
         }
-    }```
+    }
+```
 [บันทึกภาพหน้าจอของผลลัพธ์การทดลอง]
 ![สกรีนช็อต 2025-03-07 145020](https://github.com/user-attachments/assets/ea55336f-6d21-4eeb-8bbf-0c375bd79d1c)
 
