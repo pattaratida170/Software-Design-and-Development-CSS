@@ -232,10 +232,56 @@ div > p {
 
 ### ผลการทดลอง
 ```html
-[วางโค้ดที่นี่]
-```
-[บันทึกภาพหน้าจอของผลลัพธ์การทดลอง]
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        nav {
+            background-color: #df9535;
+            padding: 15px;
+        }
 
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        nav > ul > li {
+            margin: 0 10px;
+        }
+
+        .menu-item {
+            color: rgb(7, 0, 0);
+            text-decoration: none;
+            padding: 5px 10px;
+        }
+
+        .menu-item:hover {
+            background-color: #570a0a;
+            border-radius: 3px;
+        }
+
+        #active {
+            background-color: #d2c4c4;
+            border-radius: 3px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#" class="menu-item">หน้าแรก</a></li>
+            <li><a href="#" class="menu-item" id="active">สินค้า</a></li>
+            <li><a href="#" class="menu-item">เกี่ยวกับเรา</a></li>
+            <li><a href="#" class="menu-item">ติดต่อ</a></li>
+        </ul>
+    </nav>
+</body>
+</html>```
+[บันทึกภาพหน้าจอของผลลัพธ์การทดลอง]
+![สกรีนช็อต 2025-03-07 134729](https://github.com/user-attachments/assets/5b66eacb-2400-4a3e-97d6-24f82cc35981)
 
 [](#การทดลองที่-3-การจัดการสีและพื้นหลัง)
 ## การทดลองที่ 3: การจัดการสีและพื้นหลัง
@@ -338,9 +384,128 @@ background-size: cover;
 
 ### ผลการทดลอง
 ```html
-[วางโค้ดที่นี่]
-```
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .product-card {
+    width: 300px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px #f26ecd;
+    background-color: white;
+    margin: 15px;
+    display: inline-block;
+}
+
+.product-image {
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+}
+
+.product-info {
+    padding: 15px;
+}
+
+.product-title {
+    color: #333;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.product-price {
+    color: hsl(330, 99%, 68%);
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.product-description {
+    color: #666;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.product-button {
+    display: block;
+    background: linear-gradient(to right, hwb(333 24% 2%), hsl(322, 95%, 70%));
+    color: white;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    margin-top: 15px;
+    border-radius: 4px;
+}
+
+.product-button:hover {
+    background: linear-gradient(to right, hwb(333 24% 2%), hsl(322, 95%, 70%));
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+    </style>
+
+
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Product Cards</title>
+        <link rel="stylesheet" href="styles.css"> 
+</head>
+<body>
+    <div class="product-card">
+        <div class="product-image" style="background-image: url('รูป/bl9w-hero.jpg');"></div>
+        <div class="product-info">
+            <h2 class="product-title">ไส้กรอกอีสาน</h2>
+            <p class="product-price">฿25</p>
+            <p class="product-description">
+                รายละเอียด สามารถเก็บไว้ในตู้เย็นได้นานถึง 2-3 วัน
+            </p>
+            <a href="#" class="product-button">เพิ่มลงตะกร้า</a>
+        </div>
+    </div>
+    <div class="product-card">
+        <div class="product-image" style="background-image: url('รูป/1626515086344.jpg');"></div>
+        <div class="product-info">
+            <h2 class="product-title">ไส้กรอกแดง</h2>
+            <p class="product-price">฿10</p>
+            <p class="product-description">
+                รายละเอียด สามารถเก็บไว้ในตู้เย็นได้นานถึง 2 วัน
+            </p>
+            <a href="#" class="product-button">เพิ่มลงตะกร้า</a>
+        </div>
+    </div>
+    <div class="product-card">
+        <div class="product-image" style="background-image: url('รูป/pic-chicken-cheese-sausage-02.jpg');"></div>
+        <div class="product-info">
+            <h2 class="product-title">ไส้กรอกชีส</h2>
+            <p class="product-price">฿15</p>
+            <p class="product-description">
+                รายละเอียด สามารถเก็บไว้ในตู้เย็นได้นานถึง 2 วัน
+            </p>
+            <a href="#" class="product-button">เพิ่มลงตะกร้า</a>
+        </div>
+    </div>
+    <div class="product-card">
+        <div class="product-image" style="background-image: url('รูป/pic-smoked-arabiki-pork-sausage-02.jpg');"></div>
+        <div class="product-info">
+            <h2 class="product-title">ไส้กรอกหนังกรอบ</h2>
+            <p class="product-price">฿10</p>
+            <p class="product-description">
+                รายละเอียด สามารถเก็บไว้ในตู้เย็นได้นานถึง 2 วัน
+            </p>
+            <a href="#" class="product-button">เพิ่มลงตะกร้า</a>
+        </div>
+    </div>
+</body>
+
+</html>```
 [บันทึกภาพหน้าจอของผลลัพธ์การทดลอง]
+![สกรีนช็อต 2025-03-07 141127](https://github.com/user-attachments/assets/bc96a492-4670-4b43-83a0-b69a7bdd2e17)
 
 [](#การทดลองที่-4-การจัดการขนาดและระยะห่าง)
 ## การทดลองที่ 4: การจัดการขนาดและระยะห่าง
@@ -436,12 +601,80 @@ border: 1px solid black;
 
 ### ผลการทดลอง
 ```html
-[วางโค้ด HTML ที่นี่]
-```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+
+</style>
+</head>
+<body>
+    <div class="stats-container">
+        <div class="stat-box">
+            <div class="stat-number">3100</div>
+            <div class="stat-label">ผู้ใช้งาน</div>
+        </div>
+        <div class="stat-box">
+            <div class="stat-number">35k</div>
+            <div class="stat-label">ยอดขาย</div>
+        </div>
+        <div class="stat-box">
+            <div class="stat-number">82%</div>
+            <div class="stat-label">ความพึงพอใจ</div>
+        </div>
+        
+    </div>
+</body>
+</html>```
 ```css
-[วางโค้ด CSS ที่นี่]
-```
+.stats-container {
+        display: flex;
+        justify-content: space-around;
+        max-width: 1200px;
+        margin: 2rem auto;
+        padding: 0 1rem;
+    }
+    
+    .stat-box {
+        flex: 1;
+        margin: 0 15px;
+        padding: 2rem;
+        text-align: center;
+        background-color: #fff;
+        border-radius: 20px; 
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+        transition: transform 0.3s ease-in-out; 
+    }
+    
+    .stat-number {
+        font-size: 4rem; 
+        font-weight: bold;
+        color: hsl(320, 94%, 66%); 
+        margin-bottom: 1rem; 
+    }
+    
+    .stat-label {
+        font-size: 1.5rem; 
+        color: #555; 
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+    
+    .stat-box:hover {
+        transform: scale(1.05); 
+    }
+    
+    @media (max-width: 768px) {
+        .stats-container {
+            flex-direction: column; 
+        }
+    
+        .stat-box {
+            margin: 1rem 0;
+        }
+    }```
 [บันทึกภาพหน้าจอของผลลัพธ์การทดลอง]
+![สกรีนช็อต 2025-03-07 145020](https://github.com/user-attachments/assets/ea55336f-6d21-4eeb-8bbf-0c375bd79d1c)
 
 [](#การทดลองที่-5-การจัดการข้อความและฟอนต์)
 ## การทดลองที่ 5: การจัดการข้อความและฟอนต์
